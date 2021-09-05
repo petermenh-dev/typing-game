@@ -1,0 +1,23 @@
+.dictionary-lists {
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.dictionary-item {
+  color: rgb(143, 159, 255);
+  cursor: pointer;
+}
+.dictionary-item:hover {
+  cursor: pointer;
+  color: aqua;
+}
+
+.background-scrim {
+  background-color: black;
+  height: 100%;
+  opacity: 80%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}

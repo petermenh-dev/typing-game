@@ -1,0 +1,108 @@
+.play-container {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 80%;
+  z-index: 2;
+}
+
+.category {
+  font-size: xx-large;
+  margin: 0 0 1rem 0;
+}
+
+.stats {
+  display: flex;
+  font-size: large;
+  justify-content: space-between;
+  margin: 2rem;
+  width: 100%;
+}
+
+.current-word {
+  background-color: black;
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+  border-radius: 1rem;
+  display: flex;
+  font-size: xx-large;
+  justify-content: center;
+  margin: 2rem 0 0 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.text-input {
+  border-radius: 16px;
+  font-size: large;
+  height: 2rem;
+  margin: 2rem 0 4rem 0;
+  text-align: center;
+}
+
+.new-word-btn {
+  background-color: rgb(63, 63, 63);
+  position: relative;
+}
+
+.new-word-btn:hover {
+  background-color: rgb(70, 70, 70);
+}
+
+.new-word-btn:active {
+  background-color: rgb(211, 211, 211);
+  color: black;
+}
+
+.go-back-btn {
+  background-color: rgb(63, 63, 63);
+  color: white;
+  height: 1.5rem;
+  justify-content: space-evenly;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 7rem;
+}
+
+.go-back-btn:hover {
+  color: rgb(255, 0, 0);
+}
+
+.go-back-btn:active {
+  background-color: rgb(22, 22, 22);
+}
+
+.new-word-btn .tooltiptext {
+  background-color: rgb(116, 116, 116);
+  border-radius: 6px;
+  bottom: 100%;
+  color: white;
+  font-size: small;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  transition: opacity 1s;
+  visibility: hidden;
+  width: 10rem;
+}
+
+.new-word-btn .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(116, 116, 116) transparent transparent transparent;
+}
+
+.new-word-btn:hover .tooltiptext {
+  opacity: 1;
+  visibility: visible;
+}
